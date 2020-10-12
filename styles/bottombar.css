@@ -1,0 +1,93 @@
+.nav-item {
+  align-items: center;
+  display: flex;
+}
+
+.bottomMenu {
+  height: 72px;
+  bottom: 0;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 0 2px 5px rgba(201, 119, 119, 0.2);
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+.bottomMenu p {
+  margin: 0;
+  /* line-height: 26px; */
+  margin-left: 0px;
+  opacity: 0;
+  /* display: none; */
+  text-decoration: none;
+  max-width: 0px;
+  transition: max-width cubic-bezier(0.39, 0.04, 0.01, 0.95) 0.5s,
+    margin-left cubic-bezier(0.39, 0.04, 0.01, 0.95) 0.5s,
+    opacity cubic-bezier(0.39, 0.04, 0.01, 0.95) 0.5s;
+}
+.bottomMenu a {
+  color: #cacaca;
+}
+.bottomMenu .active p {
+  max-width: 100px;
+  margin-left: 8px !important;
+  opacity: 1;
+  -webkit-transition: max-width 1s; /* Safari */
+  transition: max-width 0.5s, margin-left 0.5s, opacity 0.5s;
+}
+
+.bottomMenu .active.bm1 {
+  color: #03a9f4;
+  background: #2196f31a;
+}
+.bottomMenu .bm1:hover {
+  color: #03a9f4;
+}
+.bottomMenu .active.bm2 {
+  color: #f4bc03;
+  background: #f3cd211a;
+}
+.bottomMenu .bm2:hover {
+  color: rgb(244, 188, 3);
+}
+.bottomMenu .active.bm3 {
+  color: #1bca72;
+  background: #0ec58e21;
+}
+.bottomMenu .bm3:hover {
+  color: #1bca72;
+}
+.bottomMenu .active.bm3 svg path,
+.bottomMenu .bm3:hover svg path {
+  fill: #1bca72;
+}
+.bottomMenu .active.bm4 {
+  color: #f40353;
+  background: #f3213d1a;
+}
+.bottomMenu .bm4:hover {
+  color: rgb(244, 3, 83);
+}
+.bottomMenu .active.bm5 {
+  color: #8803f4;
+  background: #8e21f31a;
+}
+.bottomMenu .bm5:hover {
+  color: rgb(136, 3, 244);
+}
+.bottomMenu .centerButton.active {
+  background: #fafafa;
+  color: #e2004f !important;
+}
+.btMenu {
+  display: flex !important;
+  align-items: center;
+  border-radius: 1000px;
+  color: #ccc;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 6px 12px;
+}
