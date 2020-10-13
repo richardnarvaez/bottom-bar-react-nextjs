@@ -1,4 +1,4 @@
-# BOTTOMBAR
+# BOTTOMBAR WEB JS - REACT NEXTJS
 
 <p align="center">
   <img src="screenshot/screen.gif" alt="Imagen ejemplo" />
